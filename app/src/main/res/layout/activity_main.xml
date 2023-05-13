@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:gravity="center"
+                android:padding="80dp"
+                android:src="@drawable/chaainglogo"
+                android:textSize="42sp" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_margin="16dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="10dp"
+
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:id="@+id/email_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_margin="5dp"
+                    android:hint="Email"
+
+                  android:backgroundTint="@color/grey"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/password_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:layout_margin="5dp"
+
+                    android:backgroundTint="@color/grey"
+                    android:inputType="textPassword" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/custom_signin_button"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/black"
+                        android:tag="custom_login_button"
+                        android:background="@drawable/roundbtn"
+                        android:text="@string/sign_in" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/custom_signup_button"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/roundbtn"
+                        android:tag="custom_signup_button"
+                        android:text="@string/sign_up_button" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/facebook_login_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/btnfacebook"
+                        android:tag="facebook_login_button"
+                        android:textColor="@color/white"
+                        android:text="@string/sign_in_facebook" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/google_login_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:tag="google_login_button"
+                        android:background="@drawable/btngoogle"
+                        android:textColor="@color/white"
+                        android:layout_margin="5dp"
+                        android:text="@string/sign_in_google" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</layout>
