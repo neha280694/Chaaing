@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Chaaing"
         tools:targetApi="31">
         <activity
+            android:name=".burgeritem"
+            android:exported="false" />
+        <activity
             android:name=".pizzaitem"
             android:exported="false" />
         <activity
