@@ -22,6 +22,8 @@ public class maggiItem extends AppCompatActivity {
     LinearLayout linearLayout1;
 
 
+    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +32,6 @@ public class maggiItem extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(maggiItem.this, Dashboard.class));
-
             }
         });
 
