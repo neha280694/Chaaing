@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Chaaing"
         tools:targetApi="31">
         <activity
+            android:name=".ecart"
+            android:exported="false" />
+        <activity
             android:name=".juicesitem"
             android:exported="false" />
         <activity

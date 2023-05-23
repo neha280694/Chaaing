@@ -133,14 +133,13 @@
             android:layout_height="wrap_content"
             android:text="Coupon">
         </TextView>
-
     </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="8px"
-        android:layout_margin="8px">
+        android:="8px">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
